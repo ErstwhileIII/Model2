@@ -1,0 +1,31 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.android.databinding'
+
+android {
+    compileSdkVersion 'android-MNC'
+    buildToolsVersion "23.0.0 rc3"
+
+    defaultConfig {
+        applicationId "com.velocikey.android.learning.model2"
+        minSdkVersion 21
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    // for image loading and caching
+    compile 'com.squareup.picasso:picasso:2.5.2'
+
+    compile 'com.android.support:recyclerview-v7:22.2.1'
+    compile 'com.android.support:support-v4:22.2.0'
+}

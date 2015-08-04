@@ -1,0 +1,43 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.velocikey.android.learning.model2.MovieDetailFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/movie_detail_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:text="movie title"/>
+    <TextView
+        android:id="@+id/movie_detail_releasedate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/movie_detail_title"
+        android:text="movie release date"/>
+    <TextView
+        android:id="@+id/movie_detail_popularity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/movie_detail_releasedate"
+        android:text="movie popularity"/>
+    <TextView
+        android:id="@+id/movie_detail_rating"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/movie_detail_popularity"
+        android:text="movie rating"/>
+    <ImageView
+        android:id="@+id/imageposter_large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/movie_detail_rating"
+        android:layout_marginBottom="12dp"
+        android:layout_marginRight="12dp"
+        android:elevation="2dp"
+        android:src="@mipmap/ic_launcher" />
+
+</RelativeLayout>
